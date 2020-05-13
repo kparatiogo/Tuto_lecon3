@@ -1,0 +1,111 @@
+{
+    "name": "Exercice_schema",
+    "title": "Schema HDR 2007-2008 Table 24",
+    "description": "Schema de l'exercice de maison",
+    "fields": [
+        {
+            "name": "HDI_rank",
+            "title": "Classemnt IDH par pays",
+            "type": "number",
+            "description": "Human Development Index."
+        },
+		{
+            "name": "HDI_level",
+            "title": "Niveau de developpement des pays",
+            "type": "array",
+            "description": "Classemnt par niveau de IDH.",
+            "constraints": {
+                "enum": [
+                    "HIGH HUMAN DEVELOPMENT", 
+                    "MEDIUM HUMAN DEVELOPMENT", 
+                    "LOW HUMAN DEVELOPMENT"
+                ]
+            }
+        },
+		{
+            "name": "Country",
+            "title": "Nom des des pays",
+            "type": "string",
+            "description": "Nom des différents pays.",
+        },
+        {
+            "name": "Total(Mt CO2)_1990",
+            "title": "Volume total de pollution de 1990",
+            "type": "number",
+            "description": "Volume total de pollution annuel."
+        },
+		{
+            "name": "Total(Mt CO2)_2004",
+            "title": "Volume total de pollution de 2004",
+            "type": "number",
+            "description": "Volume total de pollution annuel."
+        },
+		{
+            "name": "Annual_change(%)_1990-2004",
+            "title": "Variation annuel de co2 entre 1990 et 2004",
+            "type": "number",
+            "description": "Variation annuel de co2 par pays."
+        },
+        {
+            "name": "Share_of _world_total(%)_1990",
+            "title": "Volume des échanges mondiaux de 1990",
+            "type": "number",
+            "description": "Total du volume des échanges mondiaux."
+        },
+		{
+            "name": "Share_of _world_total(%)_2004",
+            "title": "Volume des échanges mondiaux de 2004",
+            "type": "number",
+            "description": "Total du volume des échanges mondiaux."
+        },
+        {
+            "name": "Per_capita(t_CO2)_1990",
+            "title": "Pollution individuelle de l'année 1990",
+            "type": "number",
+            "description": "Pollution par habitant."
+        },
+		{
+            "name": "Per_capita(t_CO2)_2004",
+            "title": "Pollution individuelle de l'année 2004",
+            "type": "number",
+            "description": "Pollution par habitant."
+        },
+        {
+            "name": "Carbon_intensity_of energy(kt_of_CO2_per _kt_of_oil_equivalent)_1990",
+            "title": "volume de co2 de 1990",
+            "type": "number",
+            "description": "Production de CO2 par baril d'huile."
+        },
+		{
+            "name": "Carbon_intensity_of energy(kt_of_CO2_per _kt_of_oil_equivalent)_2004",
+            "title": "volume de co2 de 2004",
+            "type": "number",
+            "description": "Production de CO2 par baril d'huile."
+        },
+		{
+            "name": "Carbon_intensity_of_growth(kt_of_CO2_per_million_2000_PPP_US$)_1990",
+            "title": "volume de co2 de 1990",
+            "type": "number",
+            "description": "Production de CO2 par million de dollar."
+        },
+		{
+		    "name": "Carbon_intensity_of_growth(kt_of_CO2_per_million_2000_PPP_US$)_2004",
+            "title": "volume de co2 de 2004",
+            "type": "number",
+            "description": "Production de CO2 par million de dollar."
+		},
+		{
+            "name": "Carbon_dioxide_emissions_from_forest_biomass(Mt_CO2/year)_1990-2005",
+            "title": "Emission de co2 entre 1990 et 2005",
+            "type": "number",
+            "description": "Emission annuel de co2."
+        },
+		{
+            "name": "Carbon_stocks_in_forest_biomass_(Mt_Carbon)_2005",
+            "title": "Volume restant de co2 dans la biomasse en 2005",
+            "type": "number",
+            "description": "Volume restant de co2 dans la biomasse pendant l'année 2005."
+        }
+    ],
+    "missingValues": ["N/A"]
+}
